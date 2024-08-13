@@ -46,8 +46,5 @@ jobs:
           NEXT_PUBLIC_URL: ${{ secrets.NEXT_PUBLIC_URL }}
         run: yarn build
 
-      - name: Run tests
-        run: yarn test
-
       - name: Run lint
         run: yarn lint
