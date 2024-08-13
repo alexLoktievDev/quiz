@@ -31,17 +31,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          cache: 'yarn'
 
-      - name: Install all dependencies
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Use the specified Yarn version
+        run: corepack prepare yarn@4.4.0 --activate
+
+      - name: Install dependencies
         run: yarn install --frozen-lockfile
-
-      - name: Set environment variables
-        run: echo "NEXT_PUBLIC_URL=${{ github.event.repository.html_url }}" >> $GITHUB_ENV
 
       - name: Build app
         env:
-          NEXT_PUBLIC_URL: ${{ env.NEXT_PUBLIC_URL }}
+          NEXT_PUBLIC_URL: ${{ secrets.NEXT_PUBLIC_URL }}
         run: yarn build
 
       - name: Run tests
