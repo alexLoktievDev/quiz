@@ -1,5 +1,5 @@
-import { FC, ReactNode } from 'react';
-import { Box, IButton } from '@components/atoms';
+import { FC } from 'react';
+import { Box } from '@components/atoms';
 import { useTheme } from 'styled-components';
 import {
   StyledInfoScreen,
@@ -10,13 +10,7 @@ import {
   StyledInfoScreenHandSvg,
   StyledInfoScreenTypography,
 } from './InfoScreenLayout.style';
-
-export type TInfoScreenLayout = {
-  buttonProps: IButton;
-  text: string;
-  hasTriangleBackground?: boolean;
-  header?: () => ReactNode;
-};
+import { TInfoScreenLayout } from './InfoScreenLayout.type';
 
 export const InfoScreenLayout: FC<TInfoScreenLayout> = ({
   text,

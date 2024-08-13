@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Box, Button, HandSvg, Typography } from '@components/atoms';
-import { TInfoScreenLayout } from '@components/templates/info-screen-layout/InfoScreenLayout';
 import { resolutionSizes } from '@helpers/styles';
+import { TInfoScreenLayout } from './InfoScreenLayout.type';
 
 export const StyledInfoScreenWithTriangle = styled.section<
   Pick<TInfoScreenLayout, 'hasTriangleBackground'>
