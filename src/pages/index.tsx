@@ -41,18 +41,27 @@ const Home: FC<IQuestionsList> = ({ questions }) => {
     </main>
   );
 };
-
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_URL || `https://${process.env.VERCEL_URL}`}/questions.json`,
-  );
-  const data = await res.json();
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_URL || `https://${process.env.VERCEL_URL}`}/questions.json`,
+    );
+    if (!res.ok) {
+      throw new Error(`Failed to fetch data: ${res.statusText}`);
+    }
+    const data = await res.json();
 
-  return {
-    props: {
-      questions: data.questions,
-    },
-  };
+    return {
+      props: {
+        questions: data.questions,
+      },
+    };
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    return {
+      notFound: true, // Show 404 page if data fetching fails
+    };
+  }
 };
 
 export default Home;
