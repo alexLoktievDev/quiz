@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { FC, useEffect, useMemo, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { StepperLayout } from '@components/templates/stepper-layout';
 import { Box, BurgerIcon, HighlightedTypography } from '@components/atoms';
@@ -32,10 +32,11 @@ export const QuizScreen: FC<TStepperItem> = ({
 
   // Watch the selected answer for the current question
   const selectedAnswer = watch(currentQuestion.score.toString());
-  const selectedAnswerArray =
-    selectedAnswer && Array.isArray(selectedAnswer)
+  const selectedAnswerArray = useMemo(() => {
+    return selectedAnswer && Array.isArray(selectedAnswer)
       ? selectedAnswer
       : [selectedAnswer];
+  }, [selectedAnswer]);
 
   // Handle the selection and deselection logic
   const handleSelection = (value: string) => {
