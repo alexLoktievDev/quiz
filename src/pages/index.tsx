@@ -43,7 +43,9 @@ const Home: FC<IQuestionsList> = ({ questions }) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/questions.json`);
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_URL || `https://${process.env.VERCEL_URL}`}/questions.json`,
+  );
   const data = await res.json();
 
   return {
