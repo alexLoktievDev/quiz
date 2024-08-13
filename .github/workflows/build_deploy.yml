@@ -46,9 +46,3 @@ jobs:
 
       - name: Run lint
         run: yarn lint
-
-      - name: Deploy to Vercel
-        if: ${{ github.event_name == 'push' && github.ref_name == 'main' }}
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: npx vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
