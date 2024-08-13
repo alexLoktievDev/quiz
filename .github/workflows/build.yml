@@ -36,9 +36,12 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
+      - name: Set environment variables
+        run: echo "NEXT_PUBLIC_URL=${{ github.event.repository.html_url }}" >> $GITHUB_ENV
+
       - name: Build app
         env:
-          NEXT_PUBLIC_URL: ${{ github.event.repository.html_url }}
+          NEXT_PUBLIC_URL: ${{ env.NEXT_PUBLIC_URL }}
         run: yarn build
 
       - name: Run tests
