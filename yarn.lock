@@ -2668,7 +2668,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/icons@npm:^1.2.5":
+"@storybook/icons@npm:^1.2.10, @storybook/icons@npm:^1.2.5":
   version: 1.2.10
   resolution: "@storybook/icons@npm:1.2.10"
   peerDependencies:
@@ -10003,6 +10003,7 @@ __metadata:
     "@storybook/addon-links": "npm:^8.2.8"
     "@storybook/addon-onboarding": "npm:^8.2.8"
     "@storybook/blocks": "npm:^8.2.8"
+    "@storybook/icons": "npm:^1.2.10"
     "@storybook/nextjs": "npm:^8.2.8"
     "@storybook/react": "npm:^8.2.8"
     "@storybook/test": "npm:^8.2.8"

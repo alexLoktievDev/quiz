@@ -14,6 +14,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@storybook/icons": "^1.2.10",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
