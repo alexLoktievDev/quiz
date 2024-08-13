@@ -1,0 +1,132 @@
+{
+  "questions": [
+    {
+      "question": "What is the color of the sky on a clear day?",
+      "answers": [
+        { "text": "Blue", "isCorrect": true },
+        { "text": "Green", "isCorrect": false },
+        { "text": "Red", "isCorrect": false },
+        { "text": "Yellow", "isCorrect": false }
+      ],
+      "score": 500
+    },
+    {
+      "question": "Which of these animals is known for being able to fly?",
+      "answers": [
+        { "text": "Eagle", "isCorrect": true },
+        { "text": "Penguin", "isCorrect": false },
+        { "text": "Elephant", "isCorrect": false },
+        { "text": "Bat", "isCorrect": true }
+      ],
+      "score": 1000
+    },
+    {
+      "question": "Which of these is a fruit?",
+      "answers": [
+        { "text": "Carrot", "isCorrect": false },
+        { "text": "Apple", "isCorrect": true },
+        { "text": "Potato", "isCorrect": false },
+        { "text": "Banana", "isCorrect": true },
+        { "text": "Broccoli", "isCorrect": false },
+        { "text": "Tomato", "isCorrect": true }
+      ],
+      "score": 2000
+    },
+    {
+      "question": "What is 2 + 2?",
+      "answers": [
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": true },
+        { "text": "5", "isCorrect": false },
+        { "text": "6", "isCorrect": false }
+      ],
+      "score": 4000
+    },
+    {
+      "question": "Which of these is a color?",
+      "answers": [
+        { "text": "Blue", "isCorrect": true },
+        { "text": "Cat", "isCorrect": false },
+        { "text": "Dog", "isCorrect": false },
+        { "text": "Green", "isCorrect": true }
+      ],
+      "score": 8000
+    },
+    {
+      "question": "Which of these is a day of the week?",
+      "answers": [
+        { "text": "Monday", "isCorrect": true },
+        { "text": "Apple", "isCorrect": false },
+        { "text": "Wednesday", "isCorrect": true },
+        { "text": "Banana", "isCorrect": false }
+      ],
+      "score": 16000
+    },
+    {
+      "question": "Which of these are planets in our solar system?",
+      "answers": [
+        { "text": "Earth", "isCorrect": true },
+        { "text": "Mars", "isCorrect": true },
+        { "text": "Venus", "isCorrect": true },
+        { "text": "Sun", "isCorrect": false },
+        { "text": "Jupiter", "isCorrect": true },
+        { "text": "Moon", "isCorrect": false }
+      ],
+      "score": 32000
+    },
+    {
+      "question": "Which of these is an even number?",
+      "answers": [
+        { "text": "1", "isCorrect": false },
+        { "text": "2", "isCorrect": true },
+        { "text": "3", "isCorrect": false },
+        { "text": "4", "isCorrect": true }
+      ],
+      "score": 64000
+    },
+    {
+      "question": "Which of these are vehicles?",
+      "answers": [
+        { "text": "Car", "isCorrect": true },
+        { "text": "Bicycle", "isCorrect": true },
+        { "text": "Airplane", "isCorrect": true },
+        { "text": "Tree", "isCorrect": false },
+        { "text": "Train", "isCorrect": true },
+        { "text": "House", "isCorrect": false }
+      ],
+      "score": 125000
+    },
+    {
+      "question": "Which of these is a programming language?",
+      "answers": [
+        { "text": "Python", "isCorrect": true },
+        { "text": "HTML", "isCorrect": false },
+        { "text": "Java", "isCorrect": true },
+        { "text": "Microsoft Word", "isCorrect": false }
+      ],
+      "score": 250000
+    },
+    {
+      "question": "Which of these are common pets?",
+      "answers": [
+        { "text": "Dog", "isCorrect": true },
+        { "text": "Cat", "isCorrect": true },
+        { "text": "Fish", "isCorrect": true },
+        { "text": "Elephant", "isCorrect": false }
+      ],
+      "score": 500000
+    },
+    {
+      "question": "Which of these instruments are musical?",
+      "answers": [
+        { "text": "Guitar", "isCorrect": true },
+        { "text": "Piano", "isCorrect": true },
+        { "text": "Violin", "isCorrect": true },
+        { "text": "Spoon", "isCorrect": false },
+        { "text": "Drum", "isCorrect": true },
+        { "text": "Fork", "isCorrect": false }
+      ],
+      "score": 1000000
+    }
+  ]
+}

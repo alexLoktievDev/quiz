@@ -12,6 +12,7 @@
   "plugins": [
     "@typescript-eslint",
     "testing-library",
+    "unused-imports",
     "jest-dom"
   ],
   "parser": "@typescript-eslint/parser",
@@ -28,7 +29,13 @@
     }
   },
   "rules": {
+    "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+    ],
     "react/jsx-filename-extension": [
       1,
       {
@@ -58,6 +65,7 @@
       }
     ],
     "react/no-unescaped-entities": "off",
+    "@typescript-eslint/no-empty-object-type": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {

@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
+    "lint:styles": "stylelint 'src/**/*.{js,jsx,ts,tsx,css}'",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -16,7 +17,13 @@
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.52.2",
     "styled-components": "^6.1.12"
+  },
+  "_moduleAliases": {
+    "@components": "src/app/components",
+    "@helpers": "src/app/helpers",
+    "@pages": "src/pages"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.6.1",
@@ -48,10 +55,16 @@
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-styled-components-a11y": "^2.1.35",
     "eslint-plugin-testing-library": "^6.2.2",
+    "eslint-plugin-unused-imports": "^4.1.3",
     "husky": "^9.1.4",
     "prettier": "^3.3.3",
     "storybook": "^8.2.8",
+    "stylelint": "^16.8.1",
+    "stylelint-config-recommended": "^14.0.1",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-processor-styled-components": "^1.10.0",
     "typescript": "^5"
   },
   "lint-staged": {
