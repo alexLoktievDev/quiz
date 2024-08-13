@@ -33,7 +33,7 @@ jobs:
           node-version: '20.x'
           cache: 'yarn'
 
-      - name: Install dependencies
+      - name: Install all dependencies
         run: yarn install --frozen-lockfile
 
       - name: Set environment variables
