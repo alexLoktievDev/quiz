@@ -41,14 +41,17 @@ const Home: FC<IQuestionsList> = ({ questions }) => {
     </main>
   );
 };
+
 export const getStaticProps: GetStaticProps = async () => {
   try {
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_URL || `https://${process.env.VERCEL_URL}`}/questions.json`,
-    );
-    if (!res.ok) {
-      throw new Error(`Failed to fetch data: ${res.statusText}`);
-    }
+    const apiUrl =
+      process.env.NEXT_PUBLIC_URL || `https://${process.env.VERCEL_URL}`;
+    const res = await fetch(`${apiUrl}/questions.json`, {
+      headers: {
+        Authorization: `Bearer ${process.env.YOUR_API_TOKEN}`, // FIX: Replaced 'your' with 'YOUR'
+      },
+    });
+
     const data = await res.json();
 
     return {
@@ -56,10 +59,9 @@ export const getStaticProps: GetStaticProps = async () => {
         questions: data.questions,
       },
     };
-  } catch (error) {
-    console.error('Error fetching data:', error);
+  } catch {
     return {
-      notFound: true, // Show 404 page if data fetching fails
+      notFound: true,
     };
   }
 };
