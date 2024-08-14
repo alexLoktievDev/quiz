@@ -8,7 +8,7 @@ export const StyledFinalScreenTypography = styled(Typography)`
   font-weight: ${({ theme }) => theme.fonts.weights.regular};
   opacity: 0.5;
 
-  @media (max-width: ${resolutionSizes.tablet}) {
+  @media (max-width: ${resolutionSizes.tablet - 1}px) {
     text-align: center;
   }
 `;

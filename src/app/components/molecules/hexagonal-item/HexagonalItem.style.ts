@@ -4,6 +4,7 @@ import { IHexagonalItem } from './HexagonalItem.type';
 
 export const StyledPolygonButtonWrapper = styled.div`
   width: 100%;
+  transition: all 0.5s ease;
 `;
 
 export const StyledPolygonButton = styled.label<

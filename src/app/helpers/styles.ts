@@ -1,6 +1,6 @@
 export const resolutionSizes = {
-  mobile: '320px',
-  tablet: '768px',
-  laptop: '1024px',
-  desktop: '2560px',
+  mobile: 321,
+  tablet: 769,
+  laptop: 1025,
+  desktop: 2561,
 };

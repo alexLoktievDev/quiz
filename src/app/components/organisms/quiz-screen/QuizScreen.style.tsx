@@ -8,7 +8,7 @@ export const StyledQuizScreenScreenBurger = styled.div`
   display: none;
   cursor: pointer;
 
-  @media (max-width: ${resolutionSizes.tablet}) {
+  @media (max-width: ${resolutionSizes.tablet - 1}px) {
     display: block;
     position: absolute;
     z-index: 4;
@@ -31,7 +31,7 @@ export const StyledQuizScreenQuestionsTypography = styled(Typography)`
   font-size: 32px;
   font-weight: ${({ theme }) => theme.fonts.weights.semibold};
 
-  @media (max-width: ${resolutionSizes.tablet}) {
+  @media (max-width: ${resolutionSizes.tablet - 1}px) {
     margin: auto;
     font-size: 18px;
     padding: 20px;
@@ -46,7 +46,7 @@ export const StyledQuizScreenQuestionsTypography = styled(Typography)`
 export const StyledQuizScreenQuestionsExplanation = styled(Box)`
   margin-top: 40px;
 
-  @media (max-width: ${resolutionSizes.tablet}) {
+  @media (max-width: ${resolutionSizes.tablet - 1}px) {
     margin-top: 20px;
   }
 `;
@@ -54,14 +54,14 @@ export const StyledQuizScreenQuestionsExplanation = styled(Box)`
 export const StyledQuizScreenQuestions = styled.section`
   overflow: hidden;
 
-  @media (max-width: ${resolutionSizes.tablet}) {
+  @media (max-width: ${resolutionSizes.tablet - 1}px) {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 0 40px;
   }
 
-  @media (min-width: ${resolutionSizes.tablet}) {
+  @media (min-width: ${resolutionSizes.tablet}px) {
     display: grid;
     margin-top: auto;
     justify-items: center;

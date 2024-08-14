@@ -15,7 +15,7 @@ export const StyledButton = styled.button`
   cursor: pointer;
   transition: background-color 0.5s;
 
-  @media (max-width: ${resolutionSizes.tablet}) {
+  @media (max-width: ${resolutionSizes.tablet - 1}px) {
     min-height: 48px;
   }
 

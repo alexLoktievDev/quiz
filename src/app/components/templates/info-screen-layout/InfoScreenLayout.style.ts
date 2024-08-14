@@ -39,14 +39,14 @@ export const StyledInfoScreenHandSvg = styled(HandSvg)`
 `;
 
 export const StyledInfoScreenTypography = styled(Typography)`
-  @media (max-width: ${resolutionSizes.tablet}) {
+  @media (max-width: ${resolutionSizes.tablet - 1}px) {
     font-size: 32px;
     text-align: center;
   }
 `;
 
 export const StyledInfoScreenButton = styled(Button)`
-  @media (max-width: ${resolutionSizes.tablet}) {
+  @media (max-width: ${resolutionSizes.tablet - 1}px) {
     width: 100%;
     font-size: 14px;
   }
@@ -55,7 +55,7 @@ export const StyledInfoScreenButton = styled(Button)`
 export const StyledInfoScreenContentRight = styled(Box)`
   width: 50%;
 
-  @media (max-width: ${resolutionSizes.tablet}) {
+  @media (max-width: ${resolutionSizes.tablet - 1}px) {
     width: 100%;
     align-items: center;
   }
@@ -79,7 +79,7 @@ export const StyledInfoScreenContent = styled(Box)`
     height: auto;
   }
 
-  @media (max-width: ${resolutionSizes.tablet}) {
+  @media (max-width: ${resolutionSizes.tablet - 1}px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
