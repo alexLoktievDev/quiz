@@ -22,7 +22,7 @@ export const StyledQuizScreenQuestionsHexagonalItem = styled(
     <HexagonalItem {...props} ref={ref} />
   )),
 )`
-  width: min(100%, 421px);
+  width: 94%;
   min-width: auto;
   min-height: auto;
 `;
